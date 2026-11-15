@@ -1,0 +1,316 @@
+/* AgroVision SpaceTech + AgriTech Component Design System */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-height: 40px;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #38A832 0%, #2B8A26 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(181, 230, 29, 0.45);
+  box-shadow: 0 4px 14px rgba(56, 168, 50, 0.28);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #42BD3B 0%, #38A832 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(56, 168, 50, 0.38);
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: rgba(22, 139, 206, 0.12);
+  color: var(--color-bright-cyan);
+  border: 1px solid rgba(53, 197, 244, 0.4);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(22, 139, 206, 0.24);
+  border-color: var(--color-bright-cyan);
+  color: #FFFFFF;
+}
+
+.btn-accent {
+  background-color: var(--color-lime-green);
+  color: #061426;
+  font-weight: 700;
+}
+
+.btn-accent:hover {
+  background-color: #c5f235;
+  color: #061426;
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #FCA5A5;
+  border: 1px solid rgba(239, 68, 68, 0.45);
+}
+
+.btn-danger:hover {
+  background-color: #DC2626;
+  color: #FFFFFF;
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-text-light);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(53, 197, 244, 0.14);
+  border-color: rgba(53, 197, 244, 0.35);
+  color: #FFFFFF;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.82rem;
+  border-radius: var(--radius-sm);
+  min-height: 34px;
+}
+
+.btn-lg {
+  padding: 0.8rem 1.65rem;
+  font-size: 1rem;
+  border-radius: var(--radius-lg);
+  min-height: 46px;
+}
+
+/* Cards & Telemetry Panels */
+.card {
+  background: linear-gradient(180deg, rgba(16, 42, 76, 0.78) 0%, rgba(11, 31, 58, 0.92) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(10px);
+  color: var(--color-text-dark);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Status Indicators (Unboxed / Clean Semantic Tags) */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+}
+
+.badge-demo {
+  background-color: rgba(245, 158, 11, 0.16);
+  color: #FCD34D;
+  border: 1px solid rgba(245, 158, 11, 0.38);
+}
+
+.badge-live {
+  background-color: rgba(56, 168, 50, 0.22);
+  color: #B5E61D;
+  border: 1px solid rgba(181, 230, 29, 0.42);
+}
+
+.badge-historical {
+  background-color: rgba(22, 139, 206, 0.2);
+  color: #7DD3FC;
+  border: 1px solid rgba(53, 197, 244, 0.35);
+}
+
+.badge-satellite {
+  background-color: rgba(53, 197, 244, 0.14);
+  color: var(--color-bright-cyan);
+  border: 1px solid rgba(53, 197, 244, 0.32);
+}
+
+.badge-warning {
+  background-color: rgba(245, 158, 11, 0.18);
+  color: #FBBF24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.badge-danger {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #FCA5A5;
+  border: 1px solid rgba(239, 68, 68, 0.45);
+}
+
+/* Form Controls */
+.form-group {
+  margin-bottom: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+}
+
+.form-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid rgba(53, 197, 244, 0.28);
+  border-radius: var(--radius-md);
+  background-color: #061426;
+  color: #F8FAFC;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-select option {
+  background-color: #0B1F3A;
+  color: #F8FAFC;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--color-bright-cyan);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(53, 197, 244, 0.18);
+}
+
+.form-helper {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.form-error {
+  font-size: 0.78rem;
+  color: #FCA5A5;
+  font-weight: 600;
+}
+
+/* Alert Notification Strip (All-around subtle border, no thick left bar) */
+.alert-strip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.95rem 1.15rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  font-size: 0.88rem;
+}
+
+.alert-strip-info {
+  background-color: rgba(22, 139, 206, 0.14);
+  color: #E0F2FE;
+  border: 1px solid rgba(53, 197, 244, 0.32);
+}
+
+.alert-strip-warning {
+  background-color: rgba(245, 158, 11, 0.14);
+  color: #FEF3C7;
+  border: 1px solid rgba(245, 158, 11, 0.38);
+}
+
+.alert-strip-success {
+  background-color: rgba(56, 168, 50, 0.16);
+  color: #DCFCE7;
+  border: 1px solid rgba(181, 230, 29, 0.38);
+}
+
+/* Navigation & Sidebar Layout */
+@media (min-width: 840px) {
+  #desktop-nav {
+    display: flex !important;
+  }
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  color: var(--color-text-light);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  text-decoration: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.sidebar-link:hover {
+  color: #FFFFFF;
+  background-color: rgba(53, 197, 244, 0.1);
+  border-color: rgba(53, 197, 244, 0.2);
+}
+
+.sidebar-link.active {
+  color: #FFFFFF;
+  background: linear-gradient(90deg, rgba(22, 139, 206, 0.28) 0%, rgba(56, 168, 50, 0.2) 100%);
+  border-color: rgba(53, 197, 244, 0.45);
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .sidebar-responsive {
+    transform: translateX(0) !important;
+  }
+  .close-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .sidebar-responsive {
+    position: fixed !important;
+    left: 0;
+    top: var(--navbar-height) !important;
+    bottom: 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media (max-width: 1180px) {
+  .satellite-gis-workbench {
+    grid-template-columns: 1fr !important;
+  }
+}
+

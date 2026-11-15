@@ -1,0 +1,6 @@
+{
+  "name": "AgroVision — Space Data to Farm Decisions",
+  "description": "AgroVision - A Climate-Informed Crop Rotation Decision Support System using NASA Earth Observation Data for West Bengal, India.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
