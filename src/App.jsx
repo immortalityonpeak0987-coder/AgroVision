@@ -39,7 +39,7 @@ export default function App() {
 
           {/* Farm Dashboard Application Routes */}
           <Route path="/app" element={<DashboardLayout />}>
-            <Route index element={<Navigate to="/app/overview" replace />} />
+            <Route index element={<Navigate to="/" replace />} />
             <Route path="overview" element={<OverviewPage />} />
             <Route path="institutional" element={<InstitutionalWorkspacePage />} />
             <Route path="gis-explorer" element={<InstitutionalWorkspacePage />} />
